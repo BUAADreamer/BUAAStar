@@ -4,7 +4,7 @@ import pymysql
 
 
 def register(name, password, login=True):
-    db = pymysql.connect(host='localhost', user='root', password='1325muller', db='bestconsumer')
+    db = pymysql.connect(host='localhost', user='root', password='1234', db='bestconsumer')
     cursor = db.cursor()
     # print("connect to db")
     sql = "SELECT * FROM account \
@@ -31,7 +31,7 @@ def register(name, password, login=True):
 
 
 def getHistoryData(name):
-    db = pymysql.connect(host='localhost', user='root', password='1325muller', db='bestconsumer')
+    db = pymysql.connect(host='localhost', user='root', password='1234', db='bestconsumer')
     cursor = db.cursor()
     # print("connect to db")
     sql = "SELECT * FROM searchdata \
@@ -57,7 +57,7 @@ def addABlog(data, username):
     subtype = data['subtype']
     comment = data['comment']
     objectname = data['objectname']
-    db = pymysql.connect(host='localhost', user='root', password='1325muller', db='bestconsumer')
+    db = pymysql.connect(host='localhost', user='root', password='1234', db='bestconsumer')
     cursor = db.cursor()
     sql = "INSERT INTO blog (username, type,subtype,comment,objectname,time,goodnum) VALUES (%s, %s, %s, %s, %s, %s, %s)"
     val = (username, type, subtype, comment, objectname, str(datetime.datetime.now()), 0)
@@ -67,7 +67,7 @@ def addABlog(data, username):
 
 
 def createACourse(form):
-    db = pymysql.connect(host='localhost', user='root', password='1325muller', db='bestconsumer')
+    db = pymysql.connect(host='localhost', user='root', password='1234', db='bestconsumer')
     cursor = db.cursor()
     sql = "INSERT INTO course (coursename,difficulty,worth,intro,smallname,coursetype,comments,academy,comnum,term) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
     val = (form['coursename'], form['difficulty'], form['worth'], form['intro'], form['smallname'],
@@ -78,7 +78,7 @@ def createACourse(form):
 
 
 def getAllBlogs(type=""):
-    db = pymysql.connect(host='localhost', user='root', password='1325muller', db='bestconsumer')
+    db = pymysql.connect(host='localhost', user='root', password='1234', db='bestconsumer')
     cursor = db.cursor()
     # print("connect to db")
     sql = "SELECT * FROM blog"
@@ -101,7 +101,7 @@ def getAllBlogs(type=""):
 
 
 def getCourseInfo(name):
-    db = pymysql.connect(host='localhost', user='root', password='1325muller', db='bestconsumer')
+    db = pymysql.connect(host='localhost', user='root', password='1234', db='bestconsumer')
     cursor = db.cursor()
     # print("connect to db")
     sql = "SELECT coursename,difficulty,worth,intro,smallname,coursetype,comments,academy,comnum,term FROM course \
@@ -126,7 +126,7 @@ def getCourseInfo(name):
 
 
 def getAllCourseInfo():
-    db = pymysql.connect(host='localhost', user='root', password='1325muller', db='bestconsumer')
+    db = pymysql.connect(host='localhost', user='root', password='1234', db='bestconsumer')
     cursor = db.cursor()
     # print("connect to db")
     sql = "SELECT coursename,difficulty,worth,intro,smallname,coursetype,comments,academy,comnum,term FROM course "
@@ -155,7 +155,7 @@ def addCourseComment(form):
     difficulty = float(form['difficulty'])
     worth = float(form['worth'])
     comment = form['comment']
-    db = pymysql.connect(host='localhost', user='root', password='1325muller', db='bestconsumer')
+    db = pymysql.connect(host='localhost', user='root', password='1234', db='bestconsumer')
     cursor = db.cursor()
     sql = "SELECT coursename,difficulty,worth,intro,smallname,coursetype,comments,academy,comnum FROM course \
                        WHERE coursename = '%s'" % coursename
@@ -179,7 +179,7 @@ def addCourseComment(form):
 
 def init():
     # 打开数据库连接
-    db = pymysql.connect(host='localhost', user='root', password='1325muller', db="bestconsumer")
+    db = pymysql.connect(host='localhost', user='root', password='1234', db="bestconsumer")
 
     # 使用 cursor() 方法创建一个游标对象 cursor
     cursor = db.cursor()

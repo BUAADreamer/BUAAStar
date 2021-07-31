@@ -79,7 +79,7 @@ def searchProduct():
         productInfos, infos1 = getSpecContent(product)
         # print(productInfos)
         date = str(datetime.datetime.now()).split()[0]
-        db = pymysql.connect(host='localhost', user='root', password='1325muller', db='bestconsumer')
+        db = pymysql.connect(host='localhost', user='root', password='1234', db='bestconsumer')
         cursor = db.cursor()
         prils = []
         for info in infos1:
