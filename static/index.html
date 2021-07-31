@@ -1,0 +1,1249 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>北航星球 - Responsive Bootstrap 4 Admin Dashboard Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="css/typography.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="right-column-fixed">
+<!-- loader Start -->
+<div id="loading">
+    <div id="loading-center">
+    </div>
+</div>
+<!-- loader END -->
+<!-- Wrapper Start -->
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <div class="iq-sidebar">
+        <div id="sidebar-scrollbar">
+            <nav class="iq-sidebar-menu">
+                <ul id="iq-sidebar-toggle" class="iq-menu">
+                    <li class="active">
+                        <a href="index" class="iq-waves-effect"><i
+                                class="las la-newspaper"></i><span>北航树洞</span></a>
+                    </li>
+                    <li>
+                        <a href="profile" class="iq-waves-effect"><i
+                                class="las la-user"></i><span>个人资料</span></a>
+                    </li>
+                    <li>
+                        <a href="#ui-elements" class="iq-waves-effect collapsed" data-toggle="collapse"
+                           aria-expanded="false"><i class="ri-focus-2-line"></i><span>问课北航</span><i
+                                class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li>
+                                <a href="searchcourse" class="iq-waves-effect"><i
+                                        class="las la-user"></i><span>查询课程</span></a>
+                            </li>
+                            <li>
+                                <a href="course" class="iq-waves-effect"> <i
+                                        class="fa fa-graduation-cap"></i><span>评价课程</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="search" class="iq-waves-effect"><i
+                                class="ion-archive Information"></i><span>查询商品</span></a>
+                    </li>
+                    <li>
+                        <a href="history" class="iq-waves-effect"><i class="fa fa-train"></i><span>查询历史</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="p-3"></div>
+        </div>
+    </div>
+    <!-- TOP Nav Bar -->
+    <div class="iq-top-navbar">
+        <div class="iq-navbar-custom">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <div class="iq-navbar-logo d-flex justify-content-between">
+                    <a href="index.html">
+                        <img src="images/logo.png" class="img-fluid" alt="">
+                        <span>北航星球</span>
+                    </a>
+                    <div class="iq-menu-bt align-self-center">
+                        <div class="wrapper-menu">
+                            <div class="main-circle"><i class="ri-menu-line"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-label="Toggle navigation">
+                    <i class="ri-menu-3-line"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-list">
+                        <li>
+                            <a href="profile" class="iq-waves-effect d-flex align-items-center">
+                                <img src="images/user/1.jpg" class="img-fluid rounded-circle mr-3" alt="user">
+                                <div class="caption">
+                                    <h6 class="mb-0 line-height">{{ name }}</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index" class="iq-waves-effect d-flex align-items-center">
+                                <i class="ri-home-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
+                                <i class="ri-arrow-down-s-fill"></i>
+                            </a>
+                            <div class="iq-sub-dropdown iq-user-dropdown">
+                                <div class="iq-card shadow-none m-0">
+                                    <div class="iq-card-body p-0 ">
+                                        <div class="bg-primary p-3 line-height">
+                                            <h5 class="mb-0 text-white line-height">Hello {{ name }}</h5>
+                                            <span class="text-white font-size-12">Available</span>
+                                        </div>
+                                        <a href="profile" class="iq-sub-card iq-bg-primary-hover">
+                                            <div class="media align-items-center">
+                                                <div class="rounded iq-card-icon iq-bg-primary">
+                                                    <i class="ri-file-user-line"></i>
+                                                </div>
+                                                <div class="media-body ml-3">
+                                                    <h6 class="mb-0 ">My Profile</h6>
+                                                    <p class="mb-0 font-size-12">View personal profile details.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="profile-edit" class="iq-sub-card iq-bg-warning-hover">
+                                            <div class="media align-items-center">
+                                                <div class="rounded iq-card-icon iq-bg-warning">
+                                                    <i class="ri-profile-line"></i>
+                                                </div>
+                                                <div class="media-body ml-3">
+                                                    <h6 class="mb-0 ">Edit Profile</h6>
+                                                    <p class="mb-0 font-size-12">Modify your personal details.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="account-setting.html" class="iq-sub-card iq-bg-info-hover">
+                                            <div class="media align-items-center">
+                                                <div class="rounded iq-card-icon iq-bg-info">
+                                                    <i class="ri-account-box-line"></i>
+                                                </div>
+                                                <div class="media-body ml-3">
+                                                    <h6 class="mb-0 ">Account settings</h6>
+                                                    <p class="mb-0 font-size-12">Manage your account parameters.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="privacy-setting.html" class="iq-sub-card iq-bg-danger-hover">
+                                            <div class="media align-items-center">
+                                                <div class="rounded iq-card-icon iq-bg-danger">
+                                                    <i class="ri-lock-line"></i>
+                                                </div>
+                                                <div class="media-body ml-3">
+                                                    <h6 class="mb-0 ">Privacy Settings</h6>
+                                                    <p class="mb-0 font-size-12">Control your privacy parameters.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="d-inline-block w-100 text-center p-3">
+                                            <a class="bg-primary iq-sign-btn" href="sign-in.html" role="button">Sign out<i
+                                                    class="ri-login-box-line ml-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- TOP Nav Bar END -->
+    <!-- Page Content  -->
+    <div id="content-page" class="content-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 row m-0 p-0">
+                    <div class="col-sm-12">
+                        <div id="post-modal-data" class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                            <div class="iq-card-header d-flex justify-content-between">
+                                <div class="iq-header-title">
+                                    <h4 class="card-title">Create Post</h4>
+                                </div>
+                            </div>
+                            <div class="iq-card-body" data-toggle="modal" data-target="#post-modal">
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img">
+                                        <img src="images/user/1.jpg" alt="userimg" class="avatar-60 rounded-circle">
+                                    </div>
+                                    <form class="post-text ml-3 w-100" action="javascript:void();">
+                                        <input type="text" class="form-control rounded"
+                                               placeholder="Write something here..." style="border:none;">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="post-modal" tabindex="-1" role="dialog"
+                                 aria-labelledby="post-modalLabel" aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="post-modalLabel">Create Post</h5>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal"><i
+                                                    class="ri-close-fill"></i></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="iq-card iq-border-radius-20">
+                                                <div class="iq-card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-12 mb-3">
+                                                            <h5 class="text-primary card-title"><i
+                                                                    class="ri-pencil-fill"></i>
+                                                                新增帖子</h5>
+                                                        </div>
+                                                    </div>
+                                                    <form class="email-form" action="/index" method="post">
+                                                        <div class="form-group row">
+                                                            <label for="inputEmail3" class="col-sm-2 col-form-label">发起类型</label>
+                                                            <div class="col-sm-10">
+                                                                <select id="inputEmail3"
+                                                                        class="form-control"
+                                                                        name="type" size="1">
+                                                                    <option value="日常吐槽">日常吐槽</option>
+                                                                    <option value="商品">商品</option>
+                                                                    <option value="课程">课程</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="cc" class="col-sm-2 col-form-label">分类</label>
+                                                            <div class="col-sm-10">
+                                                                <select id="cc"
+                                                                        class="form-control"
+                                                                        name="subtype" size="1">
+                                                                    <option value="生活">生活</option>
+                                                                    <option value="学习">学习</option>
+                                                                    <option value="核心专业课">核心专业课</option>
+                                                                    <option value="一般专业课">一般专业课</option>
+                                                                    <option value="核心通识课">核心通识课</option>
+                                                                    <option value="一般通识课">一般通识课</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="subject"
+                                                                   class="col-sm-2 col-form-label">物品</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" id="subject" name="objectname"
+                                                                       class="form-control" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="subject" class="col-sm-2 col-form-label">Write
+                                                                Something</label>
+                                                            <div class="col-md-10">
+                                                                <textarea class="textarea form-control" rows="5"
+                                                                          name="comment"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <button type="submit"
+                                                                class="btn btn-primary d-block w-100 mt-3">Post
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% for blog in blogs %}
+                    <div class="col-sm-12">
+                        <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                            <div class="iq-card-body">
+                                <div class="user-post-data">
+                                    <div class="d-flex flex-wrap">
+                                        <!--                                        <div class="media-support-user-img mr-3">-->
+                                        <!--                                            <img class="rounded-circle img-fluid" src="images/user/01.jpg" alt="">-->
+                                        <!--                                        </div>-->
+                                        <div class="media-support-info mt-2">
+                                            <h5 class="mb-0 d-inline-block"><a href="#" class="">{{blog.username}}</a>
+                                            </h5>
+                                            <p class="mb-0 d-inline-block">Add New Post</p>
+                                            <p class="mb-0 text-primary">{{blog.time}}</p>
+                                            <button type="button" class="btn btn-primary mt-3"
+                                                    data-placement="top" title="Tooltip on top">
+                                                {{blog.type}}
+                                            </button>
+                                            <button type="button" class="btn btn-success mt-3"
+                                                    data-placement="right" title="Tooltip on right">
+                                                {{blog.subtype}}
+                                            </button>
+                                            {% if blog.objectname != '' %}
+                                            <button type="button" class="btn btn-info mt-3"
+                                                    data-placement="right" title="Tooltip on right">
+                                                {{blog.objectname}}
+                                            </button>
+                                            {% endif %}
+                                        </div>
+                                        <div class="iq-card-post-toolbar">
+                                            <div class="dropdown">
+                                          <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" role="button">
+                                          <i class="ri-more-fill"></i>
+                                          </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <p>{{blog.comment}}</p>
+                                </div>
+                                <!--                                <div class="user-post">-->
+                                <!--                                    <div class="d-flex">-->
+                                <!--                                        <div class="col-md-6">-->
+                                <!--                                            <a href="javascript:void();"><img src="images/page-img/p2.jpg"-->
+                                <!--                                                                              alt="post-image"-->
+                                <!--                                                                              class="img-fluid rounded w-100"></a>-->
+                                <!--                                        </div>-->
+                                <!--                                        <div class="col-md-6 row m-0 p-0">-->
+                                <!--                                            <div class="col-sm-12">-->
+                                <!--                                                <a href="javascript:void();"><img src="images/page-img/p1.jpg"-->
+                                <!--                                                                                  alt="post-image"-->
+                                <!--                                                                                  class="img-fluid rounded w-100"></a>-->
+                                <!--                                            </div>-->
+                                <!--                                            <div class="col-sm-12 mt-3">-->
+                                <!--                                                <a href="javascript:void();"><img src="images/page-img/p3.jpg"-->
+                                <!--                                                                                  alt="post-image"-->
+                                <!--                                                                                  class="img-fluid rounded w-100"></a>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <div class="col-sm-12">
+                        <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                            <div class="iq-card-body">
+                                <div class="user-post-data">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="media-support-user-img mr-3">
+                                            <img class="rounded-circle img-fluid" src="images/user/03.jpg" alt="">
+                                        </div>
+                                        <div class="media-support-info mt-2">
+                                            <h5 class="mb-0 d-inline-block"><a href="#" class="">Barb Ackue</a></h5>
+                                            <p class="mb-0 d-inline-block">Added New Image in a Post</p>
+                                            <p class="mb-0 text-primary">1 hour ago</p>
+                                        </div>
+                                        <div class="iq-card-post-toolbar">
+                                            <div class="dropdown">
+                                          <span class="dropdown-toggle" id="postdata-5" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false" role="button">
+                                          <i class="ri-more-fill"></i>
+                                          </span>
+                                                <div class="dropdown-menu m-0 p-0" aria-labelledby="postdata-5">
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i class="ri-save-line"></i>
+                                                            </div>
+                                                            <div class="data ml-2">
+                                                                <h6>Save Post</h6>
+                                                                <p class="mb-0">Add this to your saved items</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i
+                                                                    class="ri-close-circle-line"></i></div>
+                                                            <div class="data ml-2">
+                                                                <h6>Hide Post</h6>
+                                                                <p class="mb-0">See fewer posts like this.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i
+                                                                    class="ri-user-unfollow-line"></i></div>
+                                                            <div class="data ml-2">
+                                                                <h6>Unfollow User</h6>
+                                                                <p class="mb-0">Stop seeing posts but stay friends.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i
+                                                                    class="ri-notification-line"></i></div>
+                                                            <div class="data ml-2">
+                                                                <h6>Notifications</h6>
+                                                                <p class="mb-0">Turn on notifications for this post</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor,
+                                        ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra.
+                                        Proin blandit ac massa sed rhoncus</p>
+                                </div>
+                                <div class="user-post">
+                                    <a href="javascript:void();"><img src="images/page-img/p4.jpg" alt="post-image"
+                                                                      class="img-fluid rounded w-100"></a>
+                                </div>
+                                <div class="comment-area mt-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="like-block position-relative d-flex align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <div class="like-data">
+                                                    <div class="dropdown">
+                                                <span class="dropdown-toggle" data-toggle="dropdown"
+                                                      aria-haspopup="true" aria-expanded="false" role="button">
+                                                <img src="images/icon/01.png" class="img-fluid" alt="">
+                                                </span>
+                                                        <div class="dropdown-menu">
+                                                            <a class="ml-2 mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="Like"><img
+                                                                    src="images/icon/01.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="Love"><img
+                                                                    src="images/icon/02.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title=""
+                                                               data-original-title="Happy"><img src="images/icon/03.png"
+                                                                                                class="img-fluid"
+                                                                                                alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="HaHa"><img
+                                                                    src="images/icon/04.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title=""
+                                                               data-original-title="Think"><img src="images/icon/05.png"
+                                                                                                class="img-fluid"
+                                                                                                alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="Sade"><img
+                                                                    src="images/icon/06.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title=""
+                                                               data-original-title="Lovely"><img
+                                                                    src="images/icon/07.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="total-like-block ml-2 mr-3">
+                                                    <div class="dropdown">
+                                                <span class="dropdown-toggle" data-toggle="dropdown"
+                                                      aria-haspopup="true" aria-expanded="false" role="button">
+                                                140 Likes
+                                                </span>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">Max Emum</a>
+                                                            <a class="dropdown-item" href="#">Bill Yerds</a>
+                                                            <a class="dropdown-item" href="#">Hap E. Birthday</a>
+                                                            <a class="dropdown-item" href="#">Tara Misu</a>
+                                                            <a class="dropdown-item" href="#">Midge Itz</a>
+                                                            <a class="dropdown-item" href="#">Sal Vidge</a>
+                                                            <a class="dropdown-item" href="#">Other</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="total-comment-block">
+                                                <div class="dropdown">
+                                             <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                                   aria-expanded="false" role="button">
+                                             20 Comment
+                                             </span>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Max Emum</a>
+                                                        <a class="dropdown-item" href="#">Bill Yerds</a>
+                                                        <a class="dropdown-item" href="#">Hap E. Birthday</a>
+                                                        <a class="dropdown-item" href="#">Tara Misu</a>
+                                                        <a class="dropdown-item" href="#">Midge Itz</a>
+                                                        <a class="dropdown-item" href="#">Sal Vidge</a>
+                                                        <a class="dropdown-item" href="#">Other</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="share-block d-flex align-items-center feather-icon mr-3">
+                                            <a href="javascript:void();"><i class="ri-share-line"></i>
+                                                <span class="ml-1">99 Share</span></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <ul class="post-comments p-0 m-0">
+                                        <li class="mb-2">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-img">
+                                                    <img src="images/user/02.jpg" alt="userimg"
+                                                         class="avatar-35 rounded-circle img-fluid">
+                                                </div>
+                                                <div class="comment-data-block ml-3">
+                                                    <h6>Monty Carlo</h6>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                                    <div class="d-flex flex-wrap align-items-center comment-activity">
+                                                        <a href="javascript:void();">like</a>
+                                                        <a href="javascript:void();">reply</a>
+                                                        <a href="javascript:void();">translate</a>
+                                                        <span> 5 min </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-img">
+                                                    <img src="images/user/03.jpg" alt="userimg"
+                                                         class="avatar-35 rounded-circle img-fluid">
+                                                </div>
+                                                <div class="comment-data-block ml-3">
+                                                    <h6>Paul Molive</h6>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                                    <div class="d-flex flex-wrap align-items-center comment-activity">
+                                                        <a href="javascript:void();">like</a>
+                                                        <a href="javascript:void();">reply</a>
+                                                        <a href="javascript:void();">translate</a>
+                                                        <span> 5 min </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <form class="comment-text d-flex align-items-center mt-3"
+                                          action="javascript:void(0);">
+                                        <input type="text" class="form-control rounded">
+                                        <div class="comment-attagement d-flex">
+                                            <a href="javascript:void();"><i class="ri-link mr-3"></i></a>
+                                            <a href="javascript:void();"><i class="ri-user-smile-line mr-3"></i></a>
+                                            <a href="javascript:void();"><i class="ri-camera-line mr-3"></i></a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                            <div class="iq-card-body">
+                                <div class="user-post-data">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="media-support-user-img mr-3">
+                                            <img class="rounded-circle img-fluid" src="images/user/04.jpg" alt="">
+                                        </div>
+                                        <div class="media-support-info mt-2">
+                                            <h5 class="mb-0 d-inline-block"><a href="#" class="">Ira Membrit</a></h5>
+                                            <p class="mb-0 d-inline-block">Update her Status</p>
+                                            <p class="mb-0 text-primary">6 hour ago</p>
+                                        </div>
+                                        <div class="iq-card-post-toolbar">
+                                            <div class="dropdown">
+                                          <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" role="button">
+                                          <i class="ri-more-fill"></i>
+                                          </span>
+                                                <div class="dropdown-menu m-0 p-0">
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i class="ri-save-line"></i>
+                                                            </div>
+                                                            <div class="data ml-2">
+                                                                <h6>Save Post</h6>
+                                                                <p class="mb-0">Add this to your saved items</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i
+                                                                    class="ri-close-circle-line"></i></div>
+                                                            <div class="data ml-2">
+                                                                <h6>Hide Post</h6>
+                                                                <p class="mb-0">See fewer posts like this.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i
+                                                                    class="ri-user-unfollow-line"></i></div>
+                                                            <div class="data ml-2">
+                                                                <h6>Unfollow User</h6>
+                                                                <p class="mb-0">Stop seeing posts but stay friends.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i
+                                                                    class="ri-notification-line"></i></div>
+                                                            <div class="data ml-2">
+                                                                <h6>Notifications</h6>
+                                                                <p class="mb-0">Turn on notifications for this post</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor,
+                                        ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra.
+                                        Proin blandit ac massa sed rhoncus</p>
+                                </div>
+                                <div class="comment-area mt-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="like-block position-relative d-flex align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <div class="like-data">
+                                                    <div class="dropdown">
+                                                <span class="dropdown-toggle" data-toggle="dropdown"
+                                                      aria-haspopup="true" aria-expanded="false" role="button">
+                                                <img src="images/icon/01.png" class="img-fluid" alt="">
+                                                </span>
+                                                        <div class="dropdown-menu">
+                                                            <a class="ml-2 mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="Like"><img
+                                                                    src="images/icon/01.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="Love"><img
+                                                                    src="images/icon/02.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title=""
+                                                               data-original-title="Happy"><img src="images/icon/03.png"
+                                                                                                class="img-fluid"
+                                                                                                alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="HaHa"><img
+                                                                    src="images/icon/04.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title=""
+                                                               data-original-title="Think"><img src="images/icon/05.png"
+                                                                                                class="img-fluid"
+                                                                                                alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="Sade"><img
+                                                                    src="images/icon/06.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title=""
+                                                               data-original-title="Lovely"><img
+                                                                    src="images/icon/07.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="total-like-block ml-2 mr-3">
+                                                    <div class="dropdown">
+                                                <span class="dropdown-toggle" data-toggle="dropdown"
+                                                      aria-haspopup="true" aria-expanded="false" role="button">
+                                                140 Likes
+                                                </span>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">Max Emum</a>
+                                                            <a class="dropdown-item" href="#">Bill Yerds</a>
+                                                            <a class="dropdown-item" href="#">Hap E. Birthday</a>
+                                                            <a class="dropdown-item" href="#">Tara Misu</a>
+                                                            <a class="dropdown-item" href="#">Midge Itz</a>
+                                                            <a class="dropdown-item" href="#">Sal Vidge</a>
+                                                            <a class="dropdown-item" href="#">Other</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="total-comment-block">
+                                                <div class="dropdown">
+                                             <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                                   aria-expanded="false" role="button">
+                                             20 Comment
+                                             </span>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Max Emum</a>
+                                                        <a class="dropdown-item" href="#">Bill Yerds</a>
+                                                        <a class="dropdown-item" href="#">Hap E. Birthday</a>
+                                                        <a class="dropdown-item" href="#">Tara Misu</a>
+                                                        <a class="dropdown-item" href="#">Midge Itz</a>
+                                                        <a class="dropdown-item" href="#">Sal Vidge</a>
+                                                        <a class="dropdown-item" href="#">Other</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="share-block d-flex align-items-center feather-icon mr-3">
+                                            <a href="javascript:void();"><i class="ri-share-line"></i>
+                                                <span class="ml-1">99 Share</span></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <ul class="post-comments p-0 m-0">
+                                        <li class="mb-2">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-img">
+                                                    <img src="images/user/02.jpg" alt="userimg"
+                                                         class="avatar-35 rounded-circle img-fluid">
+                                                </div>
+                                                <div class="comment-data-block ml-3">
+                                                    <h6>Monty Carlo</h6>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                                    <div class="d-flex flex-wrap align-items-center comment-activity">
+                                                        <a href="javascript:void();">like</a>
+                                                        <a href="javascript:void();">reply</a>
+                                                        <a href="javascript:void();">translate</a>
+                                                        <span> 5 min </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-img">
+                                                    <img src="images/user/03.jpg" alt="userimg"
+                                                         class="avatar-35 rounded-circle img-fluid">
+                                                </div>
+                                                <div class="comment-data-block ml-3">
+                                                    <h6>Paul Molive</h6>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                                    <div class="d-flex flex-wrap align-items-center comment-activity">
+                                                        <a href="javascript:void();">like</a>
+                                                        <a href="javascript:void();">reply</a>
+                                                        <a href="javascript:void();">translate</a>
+                                                        <span> 5 min </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <form class="comment-text d-flex align-items-center mt-3"
+                                          action="javascript:void(0);">
+                                        <input type="text" class="form-control rounded">
+                                        <div class="comment-attagement d-flex">
+                                            <a href="javascript:void();"><i class="ri-link mr-3"></i></a>
+                                            <a href="javascript:void();"><i class="ri-user-smile-line mr-3"></i></a>
+                                            <a href="javascript:void();"><i class="ri-camera-line mr-3"></i></a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                            <div class="iq-card-body">
+                                <div class="post-item">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="media-support-user-img mr-3">
+                                            <img class="rounded-circle img-fluid" src="images/user/1.jpg" alt="">
+                                        </div>
+                                        <div class="media-support-info mt-2">
+                                            <h5 class="mb-0 d-inline-block"><a href="#" class="">Bni Cyst</a></h5>
+                                            <p class="ml-1 mb-0 d-inline-block">Changed Profile Picture</p>
+                                            <p class="mb-0">3 day ago</p>
+                                        </div>
+                                        <div class="iq-card-post-toolbar">
+                                            <div class="dropdown">
+                                          <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" role="button">
+                                          <i class="ri-more-fill"></i>
+                                          </span>
+                                                <div class="dropdown-menu m-0 p-0">
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i class="ri-save-line"></i>
+                                                            </div>
+                                                            <div class="data ml-2">
+                                                                <h6>Save Post</h6>
+                                                                <p class="mb-0">Add this to your saved items</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i
+                                                                    class="ri-close-circle-line"></i></div>
+                                                            <div class="data ml-2">
+                                                                <h6>Hide Post</h6>
+                                                                <p class="mb-0">See fewer posts like this.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i
+                                                                    class="ri-user-unfollow-line"></i></div>
+                                                            <div class="data ml-2">
+                                                                <h6>Unfollow User</h6>
+                                                                <p class="mb-0">Stop seeing posts but stay friends.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i
+                                                                    class="ri-notification-line"></i></div>
+                                                            <div class="data ml-2">
+                                                                <h6>Notifications</h6>
+                                                                <p class="mb-0">Turn on notifications for this post</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-post text-center">
+                                    <a href="javascript:void();"><img src="images/page-img/p5.jpg" alt="post-image"
+                                                                      class="img-fluid rounded w-100 mt-3"></a>
+                                </div>
+                                <div class="comment-area mt-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="like-block position-relative d-flex align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <div class="like-data">
+                                                    <div class="dropdown">
+                                                <span class="dropdown-toggle" data-toggle="dropdown"
+                                                      aria-haspopup="true" aria-expanded="false" role="button">
+                                                <img src="images/icon/01.png" class="img-fluid" alt="">
+                                                </span>
+                                                        <div class="dropdown-menu">
+                                                            <a class="ml-2 mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="Like"><img
+                                                                    src="images/icon/01.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="Love"><img
+                                                                    src="images/icon/02.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title=""
+                                                               data-original-title="Happy"><img src="images/icon/03.png"
+                                                                                                class="img-fluid"
+                                                                                                alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="HaHa"><img
+                                                                    src="images/icon/04.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title=""
+                                                               data-original-title="Think"><img src="images/icon/05.png"
+                                                                                                class="img-fluid"
+                                                                                                alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="Sade"><img
+                                                                    src="images/icon/06.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title=""
+                                                               data-original-title="Lovely"><img
+                                                                    src="images/icon/07.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="total-like-block ml-2 mr-3">
+                                                    <div class="dropdown">
+                                                <span class="dropdown-toggle" data-toggle="dropdown"
+                                                      aria-haspopup="true" aria-expanded="false" role="button">
+                                                140 Likes
+                                                </span>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">Max Emum</a>
+                                                            <a class="dropdown-item" href="#">Bill Yerds</a>
+                                                            <a class="dropdown-item" href="#">Hap E. Birthday</a>
+                                                            <a class="dropdown-item" href="#">Tara Misu</a>
+                                                            <a class="dropdown-item" href="#">Midge Itz</a>
+                                                            <a class="dropdown-item" href="#">Sal Vidge</a>
+                                                            <a class="dropdown-item" href="#">Other</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="total-comment-block">
+                                                <div class="dropdown">
+                                             <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                                   aria-expanded="false" role="button">
+                                             20 Comment
+                                             </span>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Max Emum</a>
+                                                        <a class="dropdown-item" href="#">Bill Yerds</a>
+                                                        <a class="dropdown-item" href="#">Hap E. Birthday</a>
+                                                        <a class="dropdown-item" href="#">Tara Misu</a>
+                                                        <a class="dropdown-item" href="#">Midge Itz</a>
+                                                        <a class="dropdown-item" href="#">Sal Vidge</a>
+                                                        <a class="dropdown-item" href="#">Other</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="share-block d-flex align-items-center feather-icon mr-3">
+                                            <a href="javascript:void();"><i class="ri-share-line"></i>
+                                                <span class="ml-1">99 Share</span></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <ul class="post-comments p-0 m-0">
+                                        <li class="mb-2">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-img">
+                                                    <img src="images/user/02.jpg" alt="userimg"
+                                                         class="avatar-35 rounded-circle img-fluid">
+                                                </div>
+                                                <div class="comment-data-block ml-3">
+                                                    <h6>Monty Carlo</h6>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                                    <div class="d-flex flex-wrap align-items-center comment-activity">
+                                                        <a href="javascript:void();">like</a>
+                                                        <a href="javascript:void();">reply</a>
+                                                        <a href="javascript:void();">translate</a>
+                                                        <span> 5 min </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-img">
+                                                    <img src="images/user/03.jpg" alt="userimg"
+                                                         class="avatar-35 rounded-circle img-fluid">
+                                                </div>
+                                                <div class="comment-data-block ml-3">
+                                                    <h6>Paul Molive</h6>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                                    <div class="d-flex flex-wrap align-items-center comment-activity">
+                                                        <a href="javascript:void();">like</a>
+                                                        <a href="javascript:void();">reply</a>
+                                                        <a href="javascript:void();">translate</a>
+                                                        <span> 5 min </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <form class="comment-text d-flex align-items-center mt-3"
+                                          action="javascript:void(0);">
+                                        <input type="text" class="form-control rounded">
+                                        <div class="comment-attagement d-flex">
+                                            <a href="javascript:void();"><i class="ri-link mr-3"></i></a>
+                                            <a href="javascript:void();"><i class="ri-user-smile-line mr-3"></i></a>
+                                            <a href="javascript:void();"><i class="ri-camera-line mr-3"></i></a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                            <div class="iq-card-body">
+                                <div class="user-post-data">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="media-support-user-img mr-3">
+                                            <img class="rounded-circle img-fluid" src="images/user/02.jpg" alt="">
+                                        </div>
+                                        <div class="media-support-info mt-2">
+                                            <h5 class="mb-0 d-inline-block"><a href="#" class="">Paige Turner</a></h5>
+                                            <p class="mb-0 d-inline-block">Added New Video in his Timeline</p>
+                                            <p class="mb-0 text-primary">1 day ago</p>
+                                        </div>
+                                        <div class="iq-card-post-toolbar">
+                                            <div class="dropdown">
+                                          <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" role="button">
+                                          <i class="ri-more-fill"></i>
+                                          </span>
+                                                <div class="dropdown-menu m-0 p-0">
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i class="ri-save-line"></i>
+                                                            </div>
+                                                            <div class="data ml-2">
+                                                                <h6>Save Post</h6>
+                                                                <p class="mb-0">Add this to your saved items</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i
+                                                                    class="ri-close-circle-line"></i></div>
+                                                            <div class="data ml-2">
+                                                                <h6>Hide Post</h6>
+                                                                <p class="mb-0">See fewer posts like this.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i
+                                                                    class="ri-user-unfollow-line"></i></div>
+                                                            <div class="data ml-2">
+                                                                <h6>Unfollow User</h6>
+                                                                <p class="mb-0">Stop seeing posts but stay friends.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item p-3" href="#">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="icon font-size-20"><i
+                                                                    class="ri-notification-line"></i></div>
+                                                            <div class="data ml-2">
+                                                                <h6>Notifications</h6>
+                                                                <p class="mb-0">Turn on notifications for this post</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor,
+                                        ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra.
+                                        Proin blandit ac massa sed rhoncus</p>
+                                </div>
+                                <div class="user-post">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <!--https://www.youtube.com/embed/j_GsIanLxZk?rel=0-->
+                                        <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="comment-area mt-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="like-block position-relative d-flex align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <div class="like-data">
+                                                    <div class="dropdown">
+                                                <span class="dropdown-toggle" data-toggle="dropdown"
+                                                      aria-haspopup="true" aria-expanded="false" role="button">
+                                                <img src="images/icon/01.png" class="img-fluid" alt="">
+                                                </span>
+                                                        <div class="dropdown-menu">
+                                                            <a class="ml-2 mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="Like"><img
+                                                                    src="images/icon/01.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="Love"><img
+                                                                    src="images/icon/02.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title=""
+                                                               data-original-title="Happy"><img src="images/icon/03.png"
+                                                                                                class="img-fluid"
+                                                                                                alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="HaHa"><img
+                                                                    src="images/icon/04.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title=""
+                                                               data-original-title="Think"><img src="images/icon/05.png"
+                                                                                                class="img-fluid"
+                                                                                                alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title="" data-original-title="Sade"><img
+                                                                    src="images/icon/06.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                            <a class="mr-2" href="#" data-toggle="tooltip"
+                                                               data-placement="top" title=""
+                                                               data-original-title="Lovely"><img
+                                                                    src="images/icon/07.png" class="img-fluid"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="total-like-block ml-2 mr-3">
+                                                    <div class="dropdown">
+                                                <span class="dropdown-toggle" data-toggle="dropdown"
+                                                      aria-haspopup="true" aria-expanded="false" role="button">
+                                                140 Likes
+                                                </span>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">Max Emum</a>
+                                                            <a class="dropdown-item" href="#">Bill Yerds</a>
+                                                            <a class="dropdown-item" href="#">Hap E. Birthday</a>
+                                                            <a class="dropdown-item" href="#">Tara Misu</a>
+                                                            <a class="dropdown-item" href="#">Midge Itz</a>
+                                                            <a class="dropdown-item" href="#">Sal Vidge</a>
+                                                            <a class="dropdown-item" href="#">Other</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="total-comment-block">
+                                                <div class="dropdown">
+                                             <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                                   aria-expanded="false" role="button">
+                                             20 Comment
+                                             </span>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Max Emum</a>
+                                                        <a class="dropdown-item" href="#">Bill Yerds</a>
+                                                        <a class="dropdown-item" href="#">Hap E. Birthday</a>
+                                                        <a class="dropdown-item" href="#">Tara Misu</a>
+                                                        <a class="dropdown-item" href="#">Midge Itz</a>
+                                                        <a class="dropdown-item" href="#">Sal Vidge</a>
+                                                        <a class="dropdown-item" href="#">Other</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="share-block d-flex align-items-center feather-icon mr-3">
+                                            <a href="javascript:void();"><i class="ri-share-line"></i>
+                                                <span class="ml-1">99 Share</span></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <ul class="post-comments p-0 m-0">
+                                        <li class="mb-2">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-img">
+                                                    <img src="images/user/02.jpg" alt="userimg"
+                                                         class="avatar-35 rounded-circle img-fluid">
+                                                </div>
+                                                <div class="comment-data-block ml-3">
+                                                    <h6>Monty Carlo</h6>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                                    <div class="d-flex flex-wrap align-items-center comment-activity">
+                                                        <a href="javascript:void();">like</a>
+                                                        <a href="javascript:void();">reply</a>
+                                                        <a href="javascript:void();">translate</a>
+                                                        <span> 5 min </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-img">
+                                                    <img src="images/user/03.jpg" alt="userimg"
+                                                         class="avatar-35 rounded-circle img-fluid">
+                                                </div>
+                                                <div class="comment-data-block ml-3">
+                                                    <h6>Paul Molive</h6>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                                    <div class="d-flex flex-wrap align-items-center comment-activity">
+                                                        <a href="javascript:void();">like</a>
+                                                        <a href="javascript:void();">reply</a>
+                                                        <a href="javascript:void();">translate</a>
+                                                        <span> 5 min </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <form class="comment-text d-flex align-items-center mt-3"
+                                          action="javascript:void(0);">
+                                        <input type="text" class="form-control rounded">
+                                        <div class="comment-attagement d-flex">
+                                            <a href="javascript:void();"><i class="ri-link mr-3"></i></a>
+                                            <a href="javascript:void();"><i class="ri-user-smile-line mr-3"></i></a>
+                                            <a href="javascript:void();"><i class="ri-camera-line mr-3"></i></a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Wrapper END -->
+<!-- Footer -->
+<footer class="bg-white iq-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a href="terms-of-service.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 text-right">
+                Copyright 2020 <a href="http://www.bootstrapmb.com/">北航星球</a> All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer END -->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Appear JavaScript -->
+<script src="js/jquery.appear.js"></script>
+<!-- Countdown JavaScript -->
+<script src="js/countdown.min.js"></script>
+<!-- Counterup JavaScript -->
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<!-- Wow JavaScript -->
+<script src="js/wow.min.js"></script>
+<!-- Apexcharts JavaScript -->
+<script src="js/apexcharts.js"></script>
+<!-- Slick JavaScript -->
+<script src="js/slick.min.js"></script>
+<!-- Select2 JavaScript -->
+<script src="js/select2.min.js"></script>
+<!-- Owl Carousel JavaScript -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Magnific Popup JavaScript -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Smooth Scrollbar JavaScript -->
+<script src="js/smooth-scrollbar.js"></script>
+<!-- lottie JavaScript -->
+<script src="js/lottie.js"></script>
+<!-- am core JavaScript -->
+<script src="js/core.js"></script>
+<!-- am charts JavaScript -->
+<script src="js/charts.js"></script>
+<!-- am animated JavaScript -->
+<script src="js/animated.js"></script>
+<!-- am kelly JavaScript -->
+<script src="js/kelly.js"></script>
+<!-- am maps JavaScript -->
+<script src="js/maps.js"></script>
+<!-- am worldLow JavaScript -->
+<script src="js/worldLow.js"></script>
+<!-- Chart Custom JavaScript -->
+<script src="js/chart-custom.js"></script>
+<!-- Custom JavaScript -->
+<script src="js/custom.js"></script>
+</body>
+</html>
